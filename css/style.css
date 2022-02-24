@@ -1,0 +1,177 @@
+.header__slideshow-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-height: 88vh;
+}
+
+.header .fa-solid {
+    position: absolute;
+    z-index: 5;
+    font-size: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+}
+
+.header .fa-solid:hover {
+    color:rgb(212, 212, 212);
+}
+
+#btn-left {
+    left: 3%;
+}
+
+#btn-right {
+    right: 3%;
+}
+
+.header__slideshow {
+    display: flex;
+    max-width: 100%;
+}
+
+.header__slideshow-images {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* SECTION SMJEROVI */
+.smjerovi {
+    padding: 1.5rem;
+}
+
+.smjerovi__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 30%));
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.smjerovi__box {
+    text-align: center;
+}
+
+.smjerovi__box i {
+    color: var(--black);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.smjerovi__box i:hover {
+    color: var(--light-yellow);
+}
+
+.smjerovi__text-content h2 {
+    color: var(--black);
+    font-family: var(--roboto);
+    font-size: 1.7rem;
+}
+
+.smjerovi__text-content p {
+    color: var(--black);
+    font-family: var(--raleway);
+    font-size: 0.95rem;
+}
+
+/* SECTION NOVOSTI */
+.novosti {
+    padding: 1.5rem;
+}
+
+.novosti__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    place-items: center;
+}
+
+.novosti__box {
+    max-width: 340px;
+    border: 1px solid #000;
+}
+
+.novosti__box img {
+    max-width: 100%;
+    min-height: 220px;
+}
+
+.novosti__text-content {
+    margin: 1rem;
+}
+
+.novosti__text-content h2 {
+    font-family: var(--roboto);
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.novosti__text-content p {
+    font-family: var(--raleway);
+    margin-bottom: 1rem;
+}
+
+/* O SKOLI SECTION */
+.about-us{
+    position: relative;
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+    z-index: -2;
+    max-width: none;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.about-info img {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.about-us-text h3{
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.about-us-text p{
+  line-height: 1.6;
+  font-family: var(--raleway);
+  color:  #737373;
+  margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .about-info {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-info img {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar__container {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: flex;
+    }
+}
