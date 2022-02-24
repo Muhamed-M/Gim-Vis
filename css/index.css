@@ -153,7 +153,10 @@ header, section {
 /* FOOTER STYLES START */
 .footer {
     background-color: var(--light-orange);
-    padding: 1rem;
+}
+
+.footer svg {
+    display: block;
 }
 
 .footer__container {
@@ -199,3 +202,24 @@ header, section {
     margin: auto;
 }
 /* FOOTER STYLES END */
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar__container {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: flex;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

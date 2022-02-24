@@ -163,15 +163,5 @@
 }
 
 @media screen and (max-width: 600px) {
-    html {
-        font-size: 14px;
-    }
-
-    .navbar__container {
-        display: none;
-    }
-
-    #hamburger-menu {
-        display: flex;
-    }
+    
 }
