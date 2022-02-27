@@ -1,0 +1,87 @@
+
+.main1{
+  background: #fff;
+  height: auto;
+}
+h2{
+  font-size: 3rem;
+  font-family: var(--roboto);
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+  text-transform: uppercase;
+
+}
+.products{
+   text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: -2rem;
+    
+}
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 400px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+  display: inline-block;
+  color: #000;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 400px;
+  width: 350px;
+  background-color:rgba(2550, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}

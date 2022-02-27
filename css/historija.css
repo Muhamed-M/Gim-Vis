@@ -1,0 +1,30 @@
+
+.leftColumn h2{
+  font-family: 'Roboto', 'serif';
+  margin: 1rem ;
+
+
+}
+
+.leftColumn p{
+  margin:2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Roboto', 'serif';
+
+}
+
+.columnsContainer { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn{  border: 1px solid  rgb(255, 255, 255); padding: 1.25em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 19.5em; }
+
+	.rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+}

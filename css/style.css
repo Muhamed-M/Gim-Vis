@@ -11,7 +11,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
 }
 
 .header .fa-solid:hover {
@@ -34,6 +34,7 @@
 .header__slideshow-images {
     max-width: 100%;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 /* SECTION SMJEROVI */
@@ -45,8 +46,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 30%));
     justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 3rem;
+    margin: 3rem 0;
 }
 
 .smjerovi__box {
@@ -64,10 +65,24 @@
     color: var(--light-yellow);
 }
 
+.smjerovi__icon {
+    width: 100px;
+}
+
+.kategorija {
+    color: var(--light-yellow);
+    font-family: var(--roboto);
+    font-weight: 700;
+}
+
 .smjerovi__text-content h2 {
     color: var(--black);
     font-family: var(--roboto);
-    font-size: 1.7rem;
+    font-size: 1.75rem;
+}
+
+.smjerovi__text-content h2:hover {
+    color: var(--light-yellow);
 }
 
 .smjerovi__text-content p {
@@ -90,7 +105,7 @@
 
 .novosti__box {
     max-width: 340px;
-    border: 1px solid #000;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .novosti__box img {
@@ -102,10 +117,17 @@
     margin: 1rem;
 }
 
-.novosti__text-content h2 {
+.novosti__text-content a {
+    display: inline-block;
     font-family: var(--roboto);
-    text-align: center;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: .5rem 0;
+}
+
+.novosti__text-content a:hover {
+    color: rgb(59, 59, 59);
 }
 
 .novosti__text-content p {
@@ -117,7 +139,7 @@
 .about-us{
     position: relative;
     padding: 1.5rem;
-    background-color: #f2f2f2;
+    background-color: #dfdfdf;
     z-index: -2;
     max-width: none;
 }
@@ -127,6 +149,7 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
 .about-info img {

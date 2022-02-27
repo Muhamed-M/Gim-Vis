@@ -1,0 +1,39 @@
+
+.leftColumn h2,h3{
+  font-family:'Roboto', sans-serif;
+  margin: 1rem ;
+
+}
+
+.leftColumn p{
+  margin-top: 0.4vw;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: justify;
+  font-family:'Raleway', sans-serif;
+ 
+
+}
+
+.columnsContainer { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn{  border: 1px solid  rgb(255, 255, 255); padding: 1.25em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 19.5em; }
+
+	.rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+}
+
+
+.clan{
+text-align: center;
+}
+
+.kodeks-text {
+    padding: 1.2rem;
+}

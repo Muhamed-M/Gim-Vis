@@ -19,11 +19,12 @@
 <body>
     <!-- NAVBAR START -->
     <nav class="navbar">
-        <a href="#home" class="logo"><img src="./assets/images/logo u boji.png" alt="logo" /></a>
+        <a href="#home" class="logo"><img src="./assets/images/logo u boji.png" alt="logo" /> GIMNAZIJA <span class="logo-span">VISOKO</span></a>
         <ul class="navbar__container">
             <li class="navbar__item"><a href="#naslovna">Početna</a></li>
-            <li class="navbar__item"><a href="#oškoli">O školi</a></li>
+            <li class="navbar__item"><a href="skola.html">O školi</a></li>
             <li class="navbar__item"><a href="#upis">Upis</a></li>
+            <li class="navbar__item"><a href="#upis">Nastava</a></li>
             <li class="navbar__item"><a href="#novosti">Novosti</a></li>
             <li class="navbar__item"><a href="#kontakt">Kontakt</a></li>
         </ul>
@@ -58,73 +59,59 @@
         <h1 class="heading">SMJEROVI</h1>
         <div class="smjerovi__container">
             <div class="smjerovi__box">
-                <i class="fa-solid fa-laptop-code"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Informaciono - komunikacioni</h2>
-                    <p>
-                        Pored zajedničkih predmeta za sva izborna područja, informatičari imaju i 5 stručnih: 
-                        Baze podataka, Operativni sistemi.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/infokom.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Informaciono - komunikacioni</h2>
+                    </div>
+                </a>
             </div>
             <div class="smjerovi__box">
-                <i class="fa-solid fa-atom"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Prirodni</h2>
-                    <p>
-                        Prirodni smjer važi za jedan od zahtjevnijih, ali i najinteresantnijih smjerova. Glavni 
-                        predmeti ovog smjera su: Hemija, Biologija i Fizika.
-                        Sa profesoricom Hemije Amrom Hrnjić.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/prirodni.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Prirodni</h2>
+                    </div>
+                </a>
             </div>
             <div class="smjerovi__box">
-                <i class="fa-solid fa-square-root-variable"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Matematičko - informatički</h2>
-                    <p>
-                        Pored zajedničkih predmeta za sva izborna područja, informatičari imaju i 5 stručnih: 
-                        Baze podataka, Operativni sistemi.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/mat.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Matematičko - informatički</h2>
+                    </div>
+                </a>
             </div>
             <div class="smjerovi__box">
-                <i class="fa-solid fa-book-atlas"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Društveni</h2>
-                    <p>
-                        Pored zajedničkih predmeta za sva izborna područja, informatičari imaju i 5 stručnih: 
-                        Baze podataka, Operativni sistemi, Programiranje, Web dizajn i Sigurnost informacija.
-                        Sve stručne predmete predaje jedan.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/drustveni.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Društveni</h2>
+                    </div>
+                </a>
             </div>
             <div class="smjerovi__box">
-                <i class="fa-solid fa-language"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Jezički</h2>
-                    <p>
-                        Pored zajedničkih predmeta za sva izborna područja, informatičari imaju i 5 stručnih: 
-                        Baze podataka, Operativni sistemi.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/jezicki.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Jezički</h2>
+                    </div>
+                </a>
             </div>
             <div class="smjerovi__box">
-                <i class="fa-solid fa-school"></i>
-                <div class="smjerovi__text-content">
-                    <h2>Pedagoški</h2>
-                    <p>
-                        Pored zajedničkih predmeta za sva izborna područja, informatičari imaju i 5 stručnih: 
-                        Baze podataka, Operativni sistemi, Programiranje.
-                    </p>
-                </div>
+                <a href="#">
+                    <img class="smjerovi__icon" src="./assets/images/pedagoski.png" alt="">
+                    <div class="smjerovi__text-content">
+                        <h2>Pedagoški</h2>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <!-- SMJEROVI SECTION END -->
 
     <section class="about-us">
-        <h1 class="heading">O nama</h1>
+        <h1 class="heading">O gimnaziji</h1>
         <div class="about-info">
          <img src="./assets/images/gim-1.jpg" alt="gimnazija" />
          <div class="about-us-text">
@@ -151,37 +138,40 @@
             <div class="novosti__box">
                 <img src="./assets/images/slider-slika-2.jpg">
                 <div class="novosti__text-content">
-                    <h2>Title</h2>
-                    <p>
+                    <h4 class="kategorija">INTERVJU</h4>
+                    <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
+                    <!--<p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
                         doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
                         doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
-                    </p>
-                    <a href="#vise" class="btn">Procitaj više</a>
+                    </p>-->
+                    <!--<a href="#vise" class="btn">Procitaj više</a>-->
                 </div>
             </div>
             <div class="novosti__box">
                 <img src="./assets/images/slider-slika-1.jpg">
                 <div class="novosti__text-content">
-                    <h2>Title</h2>
-                    <p>
+                    <h4 class="kategorija">INTERVJU</h4>
+                    <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
+                    <!--<p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
                         doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
                         doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
                     </p>
-                    <a href="#vise" class="btn">Procitaj više</a>
+                    <a href="#vise" class="btn">Procitaj više</a>-->
                 </div>
             </div>
             <div class="novosti__box">
                 <img src="./assets/images/slider-slika-3.jpg">
                 <div class="novosti__text-content">
-                    <h2>Title</h2>
-                    <p>
+                    <h4 class="kategorija">INTERVJU</h4>
+                    <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
+                    <!--<p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
                         doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
                         doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
                     </p>
-                    <a href="#vise" class="btn">Procitaj više</a>
+                    <a href="#vise" class="btn">Procitaj više</a>-->
                 </div>
             </div>
         </div>
@@ -196,7 +186,7 @@
             0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
         <div class="footer__container">
             <div class="footer__col">
-                <a href="#home" class="logo"><img src="./assets/images/logo u boji.png" alt="logo" /></a>
+                <a href="#home" class="footer-logo"><img src="./assets/images/logo crni.png" alt="logo" /></a>
                 <ul class="social-icons">
                     <li><a href="#f"><i class="fa-brands fa-facebook-square"></i></a></li>
                     <li><a href="#f"><i class="fa-brands fa-instagram"></i></a></li>
