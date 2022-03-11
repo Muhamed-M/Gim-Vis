@@ -38,16 +38,14 @@
 }
 
 /* SECTION SMJEROVI */
-.smjerovi {
-    padding: 1.5rem;
-}
 
 .smjerovi__container {
     display: grid;
+    max-width: 1440px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 30%));
     justify-content: center;
     gap: 3rem;
-    margin: 3rem 0;
+    margin: 3rem auto;
 }
 
 .smjerovi__box {
@@ -92,20 +90,21 @@
 }
 
 /* SECTION NOVOSTI */
-.novosti {
-    padding: 1.5rem;
-}
 
 .novosti__container {
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 1rem;
     place-items: center;
 }
 
 .novosti__box {
     max-width: 340px;
-    border: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(187, 187, 187);
+    border-right: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid rgb(187, 187, 187);
 }
 
 .novosti__box img {
@@ -127,7 +126,7 @@
 }
 
 .novosti__text-content a:hover {
-    color: rgb(59, 59, 59);
+    color: rgb(63, 63, 63);
 }
 
 .novosti__text-content p {
@@ -138,10 +137,9 @@
 /* O SKOLI SECTION */
 .about-us{
     position: relative;
-    padding: 1.5rem;
     background-color: #dfdfdf;
-    z-index: -2;
     max-width: none;
+    z-index: -1;
 }
 
 .about-info {
@@ -149,7 +147,6 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
 }
 
 .about-info img {

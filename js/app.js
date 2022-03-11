@@ -8,18 +8,22 @@ let slideIndex = 1;
 
 slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
 
-let timer = setInterval(() => {
+const autoSlide = () => {
     if (slideIndex > images.length - 2) return;
     slideIndex++;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.style.transition = '.8s ease-in-out';
-}, 7000);
+};
+
+let timer = setInterval(autoSlide, 5000);
 
 btnLeft.addEventListener('click', () => {
     if (slideIndex < 1) return;
     slideIndex--;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.style.transition = '.8s ease-in-out';
+    clearInterval(timer);
+    timer = setInterval(autoSlide, 5000);
 });
 
 btnRight.addEventListener('click',  () => {
@@ -27,6 +31,8 @@ btnRight.addEventListener('click',  () => {
     slideIndex++;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.style.transition = '.8s ease-in-out';
+    clearInterval(timer);
+    timer = setInterval(autoSlide, 5000);
 });
 
 slideshow.addEventListener('transitionend', () => {

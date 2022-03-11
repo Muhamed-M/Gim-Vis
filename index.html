@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/images/logo u boji.png">
     <script src="https://kit.fontawesome.com/425dea2354.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -19,14 +22,45 @@
 <body>
     <!-- NAVBAR START -->
     <nav class="navbar">
-        <a href="#home" class="logo"><img src="./assets/images/logo u boji.png" alt="logo" /> GIMNAZIJA <span class="logo-span">VISOKO</span></a>
+        <a href="#home" class="logo">
+            <img src="./assets/images/logo u boji.png" alt="logo" />
+            <span class="logo-title">Gimnazija <span class="logo-span">Visoko</span></span>
+        </a>
         <ul class="navbar__container">
-            <li class="navbar__item"><a href="#naslovna">Početna</a></li>
-            <li class="navbar__item"><a href="skola.html">O školi</a></li>
-            <li class="navbar__item"><a href="#upis">Upis</a></li>
-            <li class="navbar__item"><a href="#upis">Nastava</a></li>
-            <li class="navbar__item"><a href="#novosti">Novosti</a></li>
-            <li class="navbar__item"><a href="#kontakt">Kontakt</a></li>
+            <li class="navbar__item"><a class="item" href="#naslovna">Početna</a></li>
+            <li class="navbar__item">
+                <a class="item" href="skola.html">O školi</a>
+                <ul class="dropdown">
+                    <li><a href="#">Historijat škole</a></li>
+                    <li><a href="#">Profesori</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="item" href="#upis">Upis</a>
+                <ul class="dropdown">
+                    <li><a href="#">Historijat škole</a></li>
+                    <li><a href="#">Profesori</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="item" href="#upis">Nastava</a>
+                <ul class="dropdown">
+                    <li><a href="#">Historijat škole</a></li>
+                    <li><a href="#">Profesori</a></li>
+                    <li><a href="#">Lorem</a></li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a class="item" href="#novosti">Novosti</a>
+                <ul class="dropdown">
+                    <li><a href="#">Obavijesti</a></li>
+                    <li><a href="#">Intervju</a></li>
+                    <li><a href="#">Novosti</a></li>
+                </ul>
+            </li>
+            <li class="navbar__item"><a class="item" href="#kontakt">Kontakt</a></li>
         </ul>
         <div id="hamburger-menu">
             <span class="bar"></span>
@@ -41,11 +75,11 @@
         <div class="header__slideshow-wrapper">
             <!-- SLIDER -->
             <div class="header__slideshow">
-                <img class="header__slideshow-images" id="last-clone" src="./assets/images/slider-slika-3.jpg" alt="school">
-                <img class="header__slideshow-images" src="./assets/images/slider-slika-1.jpg" alt="school">
-                <img class="header__slideshow-images" src="./assets/images/slider-slika-2.jpg" alt="school">
-                <img class="header__slideshow-images" src="./assets/images/slider-slika-3.jpg" alt="school">
-                <img class="header__slideshow-images" id="first-clone" src="./assets/images/slider-slika-1.jpg" alt="school">
+                <img class="header__slideshow-images" id="last-clone" src="./assets/images/gim-1.jpg" alt="school">
+                <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+                <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+                <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+                <img class="header__slideshow-images" id="first-clone" src="./assets/images/gim-1.jpg" alt="school">
             </div>
             <!-- SLIDER BUTTONS -->
             <i id="btn-left" class="fa-solid fa-angle-left"></i>
@@ -110,6 +144,7 @@
     </section>
     <!-- SMJEROVI SECTION END -->
 
+    <!-- O SKOLI SECTION START -->
     <section class="about-us">
         <h1 class="heading">O gimnaziji</h1>
         <div class="about-info">
@@ -126,10 +161,11 @@
                učenicima individualno opredjeljenje područja izučavanja: jezičko, društveno, 
                prirodno, matematičko-informatičko i pedagoško, kroz koja će usavršavati i 
                sticati znanja i sposobnosti za nastavak obrazovanja na visokoškolskim ustanovama.</p>
-           <a href="#vise" class="btn">Više informacija</a>
+           <a href="skola.html" class="btn">Više informacija</a>
          </div>
         </div>
     </section>
+    <!-- O SKOLI SECTION END -->
 
     <!-- NOVOSTI SECTION START -->
     <section class="novosti">
@@ -140,12 +176,6 @@
                 <div class="novosti__text-content">
                     <h4 class="kategorija">INTERVJU</h4>
                     <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
-                    <!--<p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
-                        doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
-                        doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
-                    </p>-->
-                    <!--<a href="#vise" class="btn">Procitaj više</a>-->
                 </div>
             </div>
             <div class="novosti__box">
@@ -153,12 +183,6 @@
                 <div class="novosti__text-content">
                     <h4 class="kategorija">INTERVJU</h4>
                     <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
-                    <!--<p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
-                        doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
-                        doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
-                    </p>
-                    <a href="#vise" class="btn">Procitaj više</a>-->
                 </div>
             </div>
             <div class="novosti__box">
@@ -166,12 +190,13 @@
                 <div class="novosti__text-content">
                     <h4 class="kategorija">INTERVJU</h4>
                     <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
-                    <!--<p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis minus in 
-                        doloremque excepturi cupiditate! Dolorem, saepe dolorum? Deleniti similique 
-                        doloribus, ratione voluptate magnam porro, rerum optio hic accusamus quas corporis?
-                    </p>
-                    <a href="#vise" class="btn">Procitaj više</a>-->
+                </div>
+            </div>
+            <div class="novosti__box">
+                <img src="./assets/images/slider-slika-3.jpg">
+                <div class="novosti__text-content">
+                    <h4 class="kategorija">INTERVJU</h4>
+                    <a href="#">Bajden najavio žestoke sankcije Rusiji, ali poručio da SAD neće ratovati s Moskvom</a>
                 </div>
             </div>
         </div>

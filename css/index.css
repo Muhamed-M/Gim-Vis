@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@font-face {
+    font-family: 'BeautifulHeart';
+    src: url('beautiful_heart-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root {
     /* COLORS */
     --black: #171820;
@@ -29,8 +36,9 @@ a {
     font-family: 'Roboto', 'serif';
 }
 
-header, section {
+section {
     margin: auto;
+    padding: 3rem 0;
 }
 
 .heading {
@@ -39,7 +47,7 @@ header, section {
     font-weight: 900;
     font-size: 2.5rem;
     text-align: center;
-    margin: 1.5rem 0;
+    margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
@@ -68,12 +76,14 @@ header, section {
 /* NAVBAR STYLES START */
 .navbar {
     position: relative;
+    height: 80px;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 3rem;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
     background-color: #fff;
     z-index: 10000;
 }
@@ -92,16 +102,22 @@ header, section {
 }
 
 .logo {
-    width: 200px;
+    width: 650px;
     display: flex;
     align-items: center;
-    font-size: 2.75rem;
+}
+
+.logo-title {
+    display: flex;
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
     font-weight: 700;
-    color: var(--light-yellow);
+    color: black;
 }
 
 .logo-span {
-    color: black;
+    color: var(--light-yellow);
 }
 
 .logo img {
@@ -113,19 +129,21 @@ header, section {
     display: flex;
 }
 
-.navbar__item:not(:last-child) {
-    margin-right: 3rem;
+.navbar__item {
+    position: relative;
+    padding: 30px 1.5rem;
 }
 
-.navbar__item a {
+.navbar__item .item {
     position: relative;
     padding-bottom: .10rem;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-family: var(--roboto);
+    font-weight: 900;
+    font-size: 0.8rem;
 }
 
-.navbar__item a::before {
+.navbar__item .item::before {
     content: '';
     background-color: black;
     position: absolute;
@@ -137,7 +155,7 @@ header, section {
     transition: 0.4s;
 }
 
-.navbar__item:hover a::before {
+.navbar__item:hover .item::before {
     width: 100%;
 }
 
@@ -170,6 +188,36 @@ header, section {
 .bar:nth-child(3).active {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.dropdown {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: #fff;
+    padding: 1.25rem 2rem;
+    display: none;
+    width: 225px;
+    border: solid 1px rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+.dropdown li:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.dropdown a {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.dropdown a:hover {
+    color: rgb(63, 63, 63);
+}
+
+.navbar__item:hover .dropdown {
+   display: block;
 }
 /* NAVBAR STYLES END */
 /*Sidebar*/
@@ -307,7 +355,17 @@ header, section {
 }
 /* FOOTER STYLES END */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+
+    .logo-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
     html {
         font-size: 14px;
     }
