@@ -1,15 +1,39 @@
-const btnLeft = document.getElementById('btn-left');
-const btnRight = document.getElementById('btn-right');
-const slideshow = document.querySelector('.header__slideshow');
-const images = document.querySelectorAll('.header__slideshow-images');
-const firstImg = document.getElementById('first-clone');
-const endImg = document.getElementById('last-clone');
-let slideIndex = 1;
+// ELEMENT SELECTOR
+$ = (q) => {
+    let els = document.querySelectorAll(q);
 
+    if (els.length > 1) return els;
+    else if (els.length === 1) return els[0];
+}
+
+// SLIDER
+// RENDER SLIDESHOW
+$('.header__slideshow').innerHTML = `
+    <div class="slider-content" id="last-clone">
+        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    </div>
+    <div class="slider-content">
+        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    </div>
+    <div class="slider-content">
+        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    </div>
+    <div class="slider-content">
+        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    </div>
+    <div class="slider-content" id="first-clone">
+        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    </div>
+`;
+
+const slideshow = $('.header__slideshow');
+const slideItem = $('.slider-content');
+
+let slideIndex = 1;
 slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
 
 const autoSlide = () => {
-    if (slideIndex > images.length - 2) return;
+    if (slideIndex > slideItem.length - 2) return;
     slideIndex++;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.style.transition = '.8s ease-in-out';
@@ -17,7 +41,7 @@ const autoSlide = () => {
 
 let timer = setInterval(autoSlide, 5000);
 
-btnLeft.addEventListener('click', () => {
+$('#btn-left').addEventListener('click', () => {
     if (slideIndex < 1) return;
     slideIndex--;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
@@ -26,8 +50,8 @@ btnLeft.addEventListener('click', () => {
     timer = setInterval(autoSlide, 5000);
 });
 
-btnRight.addEventListener('click',  () => {
-    if (slideIndex > images.length - 2) return;
+$('#btn-right').addEventListener('click',  () => {
+    if (slideIndex > slideItem.length - 2) return;
     slideIndex++;
     slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     slideshow.style.transition = '.8s ease-in-out';
@@ -36,12 +60,12 @@ btnRight.addEventListener('click',  () => {
 });
 
 slideshow.addEventListener('transitionend', () => {
-    if (images[slideIndex].id === 'first-clone') {
+    if (slideItem[slideIndex].id === 'first-clone') {
         slideIndex = 1;
         slideshow.style.transition = 'none';
         slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
     }
-    if (images[slideIndex].id === 'last-clone') {
+    if (slideItem[slideIndex].id === 'last-clone') {
         slideIndex = images.length - 2;
         slideshow.style.transition = 'none';
         slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
