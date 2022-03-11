@@ -101,6 +101,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   place-items: center;
+  padding: 0 2rem;
 }
 
 .novosti__box {
@@ -143,6 +144,7 @@
   background-color: #dfdfdf;
   max-width: none;
   z-index: -1;
+  padding: 3rem 2rem;
 }
 
 .about-info {
@@ -181,5 +183,11 @@
     width: 70%;
     margin-right: 0;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__slideshow-images {
+    min-height: 90vh;
   }
 }

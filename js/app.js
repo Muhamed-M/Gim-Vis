@@ -39,7 +39,7 @@ const autoSlide = () => {
   slideshow.style.transition = ".8s ease-in-out";
 };
 
-let timer = setInterval(autoSlide, 5000);
+let timer = setInterval(autoSlide, 7000);
 
 $("#btn-left").addEventListener("click", () => {
   if (slideIndex < 1) return;
@@ -47,7 +47,7 @@ $("#btn-left").addEventListener("click", () => {
   slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
   slideshow.style.transition = ".8s ease-in-out";
   clearInterval(timer);
-  timer = setInterval(autoSlide, 5000);
+  timer = setInterval(autoSlide, 7000);
 });
 
 $("#btn-right").addEventListener("click", () => {
@@ -56,7 +56,7 @@ $("#btn-right").addEventListener("click", () => {
   slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
   slideshow.style.transition = ".8s ease-in-out";
   clearInterval(timer);
-  timer = setInterval(autoSlide, 5000);
+  timer = setInterval(autoSlide, 7000);
 });
 
 slideshow.addEventListener("transitionend", () => {
@@ -73,13 +73,16 @@ slideshow.addEventListener("transitionend", () => {
 });
 
 // NAVBAR MENU
+// NAVBAR MENU
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const bars = document.querySelectorAll(".bar");
+const menu = document.querySelector(".navbar__menu-container");
 
 hamburgerMenu.addEventListener("click", () => {
   bars.forEach((bar) => {
     bar.classList.toggle("active");
   });
+  menu.classList.toggle("active");
 });
 
 // STICKY HEADER
