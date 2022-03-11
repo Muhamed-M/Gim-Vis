@@ -1,6 +1,7 @@
 .header__slideshow-wrapper {
   position: relative;
   max-height: 88vh;
+  overflow: hidden;
 }
 
 .header .fa-solid {
