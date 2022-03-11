@@ -1,7 +1,7 @@
 .header__slideshow-wrapper {
   position: relative;
-  max-height: 88vh;
   overflow: hidden;
+  max-height: 89.5vh;
 }
 
 .header .fa-solid {
@@ -182,7 +182,4 @@
     margin-right: 0;
     margin-bottom: 2rem;
   }
-}
-
-@media screen and (max-width: 600px) {
 }
