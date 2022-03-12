@@ -62,8 +62,8 @@
   cursor: pointer;
 }
 
-.smjerovi__box i:hover {
-  color: var(--light-yellow);
+.smjerovi__box:hover .smjerovi__icon {
+  transform: scale(1.1);
 }
 
 .smjerovi__icon {
@@ -82,8 +82,9 @@
   font-size: 1.75rem;
 }
 
-.smjerovi__text-content h2:hover {
+.smjerovi__box:hover .smjerovi__text-content h2 {
   color: var(--light-yellow);
+  margin-top: .5rem;
 }
 
 .smjerovi__text-content p {
