@@ -72,6 +72,10 @@ section {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #fcc743;
+}
+
 /* NAVBAR STYLES START */
 .navbar {
   position: relative;
@@ -101,7 +105,7 @@ section {
 }
 
 .logo {
-  width: 650px;
+  width: 40%;
   display: flex;
   align-items: center;
 }
@@ -324,10 +328,12 @@ footer {
 }
 
 .footer-distributed {
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 0 3rem 3rem;
+  padding: 2rem 2rem;
 }
 
 .footer-distributed .footer-left,
@@ -345,14 +351,11 @@ footer {
 
 /* The company logo */
 
-.footer-distributed h3 {
-  color: #ffffff;
-  font: normal 36px "Open Sans", cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span {
-  color: lightseagreen;
+.footer-logo {
+  color: white;
+  font-family: 'WinterCalligraphy', cursive;
+  font-size: 2rem;
+  letter-spacing: 4px;
 }
 
 /* Footer links */
@@ -387,7 +390,7 @@ footer {
 .footer-distributed .footer-center i {
   background-color: #33383b;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 17px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -425,7 +428,7 @@ footer {
 /* Footer Right */
 
 .footer-distributed .footer-right {
-  width: 20%;
+  width: 22%;
 }
 
 .footer-distributed .footer-company-about {
@@ -463,6 +466,16 @@ footer {
 
   margin-right: 3px;
   margin-bottom: 5px;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #92999f;
 }
 
 @media (max-width: 880px) {

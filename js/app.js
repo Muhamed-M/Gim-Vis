@@ -9,21 +9,66 @@ $ = (q) => {
 // SLIDER
 // RENDER SLIDESHOW
 $(".header__slideshow").innerHTML = `
-    <div class="slider-content" id="last-clone">
-        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+  <div class="slider-content" id="last-clone">
+    <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    <div class="header__slideshow-info">
+        <div class="info__box">
+            <a href="#" class="info__caption">Ovo je naslov</a>
+            <a href="#" class="info__description">Ovo je opis</a>
+        </div>
+        <div class="info__icon">
+          <img src="./assets/images/logo bijeli.png" alt="Gimnazija Visoko" />
+        </div>
     </div>
-    <div class="slider-content">
-        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+  </div>
+  <div class="slider-content">
+    <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    <div class="header__slideshow-info">
+        <div class="info__box">
+            <a href="#" class="info__caption">Ovo je naslov</a>
+            <a href="#" class="info__description">Ovo je opis</a>
+        </div>
+        <div class="info__icon">
+          <img src="./assets/images/logo bijeli.png" alt="Gimnazija Visoko" />
+        </div>
     </div>
-    <div class="slider-content">
-        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+  </div>
+  <div class="slider-content">
+    <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    <div class="header__slideshow-info">
+        <div class="info__box">
+            <a href="#" class="info__caption">Ovo je naslov</a>
+            <a href="#" class="info__description">Ovo je opis</a>
+        </div>
+        <div class="info__icon">
+          <img src="./assets/images/logo bijeli.png" alt="Gimnazija Visoko" />
+        </div>
     </div>
-    <div class="slider-content">
-        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+  </div>
+  <div class="slider-content">
+    <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    <div class="header__slideshow-info">
+        <div class="info__box">
+            <a href="#" class="info__caption">Ovo je naslov</a>
+            <a href="#" class="info__description">Ovo je opis</a>
+        </div>
+        <div class="info__icon">
+          <img src="./assets/images/logo bijeli.png" alt="Gimnazija Visoko" />
+        </div>
     </div>
-    <div class="slider-content" id="first-clone">
-        <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+  </div>
+  <div class="slider-content" id="first-clone">
+    <img class="header__slideshow-images" src="./assets/images/gim-1.jpg" alt="school">
+    <div class="header__slideshow-info">
+        <div class="info__box">
+            <a href="#" class="info__caption">Ovo je naslov</a>
+            <a href="#" class="info__description">Ovo je opis</a>
+        </div>
+        <div class="info__icon">
+          <img src="./assets/images/logo bijeli.png" alt="Gimnazija Visoko" />
+        </div>
     </div>
+  </div>
 `;
 
 const slideshow = $(".header__slideshow");
