@@ -1,7 +1,7 @@
 
 .container{
-  width: 90%;
-  max-width: 1220px;
+  width: 95%;
+  max-width: 1150px;
   margin: 0 auto;
   background: #fff;
   border-radius: 6px;
@@ -120,7 +120,6 @@
 
 @media (max-width: 950px) {
   .container{
-    width: 90%;
     padding: 30px 40px 40px 35px ;
   }
   .container .content .right-side{

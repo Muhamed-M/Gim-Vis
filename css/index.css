@@ -303,16 +303,38 @@ section {
 .hero {
   width: 100%;
   height: 30vh;
+  position: relative;
+  margin: 0 auto;
 }
 
 .hero-image {
   max-height: 100%;
-  width: 90%;
+  width: 100%;
   object-fit: cover;
+  object-position: 0 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  filter: brightness(60%);
+}
+
+.naslov-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.naslov {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: var(--roboto);
 }
 
 .main {
@@ -324,16 +346,16 @@ section {
 /* FOOTER STYLES START */
 
 footer {
-  background: #666;
+  background: #191c21;
 }
 
 .footer-distributed {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1150px;
   margin: 0 auto;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
 }
 
 .footer-distributed .footer-left,

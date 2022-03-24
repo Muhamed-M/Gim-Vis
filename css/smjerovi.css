@@ -1,12 +1,14 @@
+.main {
+  max-width: 1150px;
+}
 
-.leftColumn h3{
+.main h3{
   font-family: 'Raleway';
   font-size: 2rem;
   color: #767679;
 }
 
-.leftColumn p{
- 
+.main p{
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -15,11 +17,9 @@
   color: #333;
 }
 
-.columnsContainer { position: relative; margin: .5em; }
+.main {  border: 1px solid  rgb(255, 255, 255); padding: 1.25em 0; }
 
-.leftColumn, .rightColumn{  border: 1px solid  rgb(255, 255, 255); padding: 1.25em; }
-
-.leftColumn { margin-bottom: .5em; }
+.main { margin-bottom: .5em; }
 
 
 .smjer-video{
@@ -31,7 +31,5 @@
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 47.5em ) {
-  .leftColumn { margin-right: 19.5em; }
-
-	.rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }   
+  .main { margin-right: 19.5em; }
 }

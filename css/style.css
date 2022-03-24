@@ -91,8 +91,8 @@
 
 .smjerovi__container {
   display: grid;
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1150px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 30%));
   justify-content: center;
   gap: 3rem;
@@ -133,14 +133,13 @@
 /* SECTION NOVOSTI */
 
 .novosti__container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1150px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
   place-items: center;
-  padding: 0 2rem;
 }
 
 .novosti__box {
@@ -208,10 +207,9 @@
   position: relative;
   display: flex;
   align-items: top;
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   z-index: 999;
 }
 
@@ -241,7 +239,7 @@
   }
 
   .about-info img {
-    width: 70%;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 2rem;
   }
