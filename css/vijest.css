@@ -1,0 +1,82 @@
+.main {
+    max-width: 1150px;
+  }
+  
+  .main h2{
+    font-family: 'Roboto', 'serif';
+    margin: 1rem ;
+  
+  
+  }
+  
+  .main p{
+    margin:2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Roboto', 'serif';
+  
+  }
+  
+  .main 
+  {  border: 1px solid  rgb(255, 255, 255);
+     padding: 1.25em 0;
+     margin-bottom:
+     .5em;
+     }
+  
+ .autor{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     
+    
+ }
+ .fa-solid {
+   margin-right: 0.5rem;
+   color: rgb(247, 198, 94);
+ }
+
+ .vijesti-slika{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     margin-left: 1rem;
+     
+ }
+ 
+ .vijesti-slika img{
+     max-width: 100%;
+  height: auto;
+ }
+ 
+ div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+
+
+  
+  /* MEDIA QUERIES */
+  @media screen and (min-width: 47.5em ) {
+    .main { margin-right: 19.5em; } 
+  }
+  
